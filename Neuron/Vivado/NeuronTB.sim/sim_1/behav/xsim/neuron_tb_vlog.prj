@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Source/rtl/Sig_ROM.v" \
+"../../../../../Source/rtl/Weight_Memory.v" \
+"../../../../../Source/rtl/neuron.v" \
+"../../../../../Source/rtl/relu.v" \
+
+sv xil_defaultlib  \
+"../../../../../Source/tb/neuron_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

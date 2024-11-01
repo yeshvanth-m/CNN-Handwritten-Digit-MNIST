@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Workspace/Masters/CNN/Neuron/Source/rtl/Sig_ROM.v,1730227153,verilog,,C:/Workspace/Masters/CNN/Neuron/Source/rtl/Weight_Memory.v,,Sig_ROM,,uvm,,,,,,
+C:/Workspace/Masters/CNN/Neuron/Source/rtl/Weight_Memory.v,1730290208,verilog,,C:/Workspace/Masters/CNN/Neuron/Source/rtl/neuron.v,C:/Workspace/Masters/CNN/Neuron/Source/rtl/include.v,Weight_Memory,,uvm,,,,,,
+C:/Workspace/Masters/CNN/Neuron/Source/rtl/include.v,1730227153,verilog,,,,,,,,,,,,
+C:/Workspace/Masters/CNN/Neuron/Source/rtl/neuron.v,1730435342,verilog,,C:/Workspace/Masters/CNN/Neuron/Source/rtl/relu.v,C:/Workspace/Masters/CNN/Neuron/Source/rtl/include.v,neuron,,uvm,,,,,,
+C:/Workspace/Masters/CNN/Neuron/Source/rtl/relu.v,1730227153,verilog,,,,ReLU,,uvm,,,,,,
+C:/Workspace/Masters/CNN/Neuron/Source/tb/neuron_tb.sv,1730435826,systemVerilog,,,,neuron_tb,,uvm,,,,,,
+C:/Workspace/Masters/CNN/Neuron/Vivado/NeuronTB.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,uvm,,,,,,

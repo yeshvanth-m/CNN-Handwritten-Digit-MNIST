@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Masters/CNN/Neuron/Source/rtl/Sig_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sig_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Masters/CNN/Neuron/Source/rtl/Weight_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Weight_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Masters/CNN/Neuron/Source/rtl/neuron.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Masters/CNN/Neuron/Source/rtl/relu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReLU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Workspace/Masters/CNN/Neuron/Source/tb/neuron_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Workspace/Masters/CNN/Neuron/Vivado/NeuronTB.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
