@@ -53,6 +53,22 @@ int main(){
 	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler)XScuGic_InterruptHandler,(void *)&IntcInstance);
 	Xil_ExceptionEnable();
 
+	for (int i = 0; i < (28*28); i++)
+	{
+		if (i % 28 == 0)
+		{
+			print("\n");
+		}
+		if (dataValues[i] > 0)
+		{
+			print("1");
+		}
+		else
+		{
+			print("0");
+		}
+	}
+
 	status = XAxiDma_SimpleTransfer(&myDma, (u32)dataValues,28*28,XAXIDMA_DMA_TO_DEVICE);
 	if(status != XST_SUCCESS){
 		print("DMA initialization failed\n");
@@ -63,7 +79,7 @@ int main(){
 
 	detectedDigit = Xil_In32(XPAR_ZYNET_0_BASEADDR+8);
 
-	xil_printf("Detected number %d expected number %d\n\r",detectedDigit,result);
+	xil_printf("\nDetected number %d, Expected number %d\n\r",detectedDigit,result);
 }
 
 
