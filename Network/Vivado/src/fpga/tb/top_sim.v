@@ -32,7 +32,7 @@ module top_sim(
     reg [`dataWidth-1:0] in;
     reg in_valid;
     reg [`dataWidth-1:0] in_mem [784:0];
-    reg [7:0] fileName[23:0];
+    reg [25*7:0] fileName;
     reg s_axi_awvalid;
     reg [31:0] s_axi_awaddr;
     wire s_axi_awready;
@@ -294,6 +294,7 @@ module top_sim(
     integer start;
     integer testDataCount;
     integer testDataCount_int;
+    reg[7:0] fileNum [3:0];
     initial
     begin
         reset = 0;
@@ -312,31 +313,36 @@ module top_sim(
         for(testDataCount=0;testDataCount<`MaxTestSamples;testDataCount=testDataCount+1)
         begin
             testDataCount_int = testDataCount;
-            fileName[0] = "t";
-            fileName[1] = "x";
-            fileName[2] = "t";
-            fileName[3] = ".";
-            fileName[4] = "0";
-            fileName[5] = "0";
-            fileName[6] = "0";
-            fileName[7] = "0";
+            fileName = "test_data_";
+            
+            for (i = 0; i < 4; i = i + 1) 
+            begin
+                fileNum[i] = 8'b0; // Initialize each register to 0
+            end
+
             i=0;
             while(testDataCount_int != 0)
             begin
-                fileName[i+4] = to_ascii(testDataCount_int%10);
+                fileNum[i] = (testDataCount_int%10);
                 testDataCount_int = testDataCount_int/10;
                 i=i+1;
-            end 
-            fileName[8] = "_";
-            fileName[9] = "a";
-            fileName[10] = "t";
-            fileName[11] = "a";
-            fileName[12] = "d";
-            fileName[13] = "_";
-            fileName[14] = "t";
-            fileName[15] = "s";
-            fileName[16] = "e";
-            fileName[17] = "t";
+            end
+            
+            for (i = 4; i > 0; i = i-1)
+            begin
+                if (fileNum[i - 1] == 0)
+                begin
+                    fileName = {fileName, "0"};
+                end
+                else
+                begin
+                    fileName = {fileName, to_ascii(fileNum[i - 1])};
+                end
+            end
+            
+            fileName = {fileName, ".txt"};
+            
+            $display("Filename: %s",fileName);
             sendData();
             @(posedge intr);
             //readAxi(24);

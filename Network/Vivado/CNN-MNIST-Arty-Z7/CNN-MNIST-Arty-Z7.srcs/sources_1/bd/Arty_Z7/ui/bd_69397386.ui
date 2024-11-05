@@ -1,31 +1,35 @@
 {
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.607444",
+   "Default View_TopLeft":"10,2",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y 50 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 80 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -y 500 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 4 -y 310 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 4 -y 470 -defaultsOSRD
-preplace inst zyNet_0 -pg 1 -lvl 4 -y 630 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 720 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 480 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -y 110 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 5 1 1770J
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 370 230 NJ 230 NJ 230 NJ 230 1770
-preplace netloc zyNet_0_intr 1 3 2 1050 540 1320
-preplace netloc axi_smc_M00_AXI 1 4 1 1310
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 30 620 NJ 620 660J 390 NJ 390 NJ 390 1760
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 2 670 600 NJ
-preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1010
-preplace netloc xlconcat_0_dout 1 4 1 1330
-preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
-preplace netloc axi_dma_0_mm2s_introut 1 3 1 1040
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 380 640 690 410 1030
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 610 370 630 680 400 1020 400 1320 220 1750
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 1 1010
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
-levelinfo -pg 1 0 200 520 850 1180 1540 1790 -top 0 -bot 820
+preplace port DDR -pg 1 -lvl 6 -x 1910 -y 50 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1910 -y 80 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 880 -y 500 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1250 -y 310 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 720 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1640 -y 110 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 530 -y 480 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1250 -y 470 -defaultsOSRD
+preplace inst zyNet_0 -pg 1 -lvl 4 -x 1250 -y 630 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 30 620 370 620 700 600 1070 220 1400 220 1880
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 330 NJ 330 NJ 330 1050J 390 NJ 390 1870
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 380 630 710 590 1090
+preplace netloc zyNet_0_intr 1 3 2 1110 540 1390
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1100 480n
+preplace netloc xlconcat_0_dout 1 4 1 1410 150n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 470
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 1060 290n
+preplace netloc axi_smc_M00_AXI 1 4 1 1390 90n
+preplace netloc processing_system7_0_DDR 1 5 1 1890J 50n
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 80
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 380 340 NJ 340 1080J 400 NJ 400 1890
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 2 680 410 1080J
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 3 1 1050 490n
+levelinfo -pg 1 0 200 530 880 1250 1640 1910
+pagesize -pg 1 -db -bbox -sgen 0 0 2030 820
 "
 }
 {
